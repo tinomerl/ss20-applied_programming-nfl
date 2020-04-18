@@ -1,12 +1,30 @@
 # choose a specific NFL division (4 teams) from table at https://en.wikipedia.org/wiki/National_Football_League#Teams
 # create dictionary of following structure for chosen division
 division = {
-    'team_id1'  : {
-        'name'  : 'team name',
-        'city'  : 'city of the team',
-        'est'   : 0,
-        'coach' : 'name of head coach'
-    }
+    "team_id1": {
+        "name": "Bufallo Bills",
+        "city": "Orchard Park, New York",
+        "est": 1960,
+        "coach": "Sean McDermott",
+    },
+    "team_id2": {
+        "name": "Miami Dolphins",
+        "city": "Miami Gardens, Florida",
+        "est": 1966,
+        "coach": "Brian Flores",
+    },
+    "team_id3": {
+        "name": "New England Patriots",
+        "city": "Foxborough, Massachusetts",
+        "est": 1960,
+        "coach": "Bill Belichick",
+    },
+    "team_id4":{
+        "name": "New York Jets",
+        "city": "East Rutherford, New Jersey",
+        "est": 1960,
+        "coach": "Adam Gase",
+    },
 }
 
 def getFoundingYear():
