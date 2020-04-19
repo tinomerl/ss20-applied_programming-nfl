@@ -37,6 +37,25 @@ def getFoundingYear(name):
             return items[1]['est']
           
 
-def getOlderTeam():
+def getOlderTeam(team_a, team_b):
     # add code for returning string which explains which team is older 
-    pass
+    
+    # get founding year of each team
+    age_a = getFoundingYear(team_a)
+    age_b = getFoundingYear(team_b)
+
+    # find out which team is older and return string
+    if age_a < age_b:
+        return("The " + team_a + " are older than the " + team_b + ".")
+    if age_a > age_b:
+        return("The " + team_b + " are older than the " + team_a + ".")
+    else:
+        return("Both teams have the same age.")
+
+
+def main():
+    older_team = getOlderTeam("New England Patriots", "Bufallo Bills")
+    print(older_team)
+
+if __name__ == "__main__":
+    main()
